@@ -65,9 +65,39 @@
 两个整数的运算的结果只能是整数
 10和10.0在Java中式完全不同的数
 10.0是浮点数
+
+浮点数
+	带小数点的数值
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int foot;
+		int inch;
+		Scanner in = new Scanner(System.in);
+		foot = in.nextInt();
+		inch = in.nextInt();
+		System.out.println(foot+inch/12.0*0.3048);
+	}	
+
+浮点运算的精度
+	浮点计算是有误差的
+        System.out.println(1.2-1.1) ;正常的是0.1，但计算机给出的结果是0.0999999999987，无限接近于0.1但不是0.1
+
+整数
+整数类型不能表达有小数部分的数，整数和整数的运算结果还是整数。
+
+1.3.2 计算的优先级
+
+与数学上的优先级是一样的，赋值的优先级很低。
+
+1.3.3 类型的转换
 	
+类型的强制转换
+	int 30/3.0 可转换成 foot = （int）（30/3.0）;
 
+(类型)值
 
-            
-   
-
+例如：
+	double b = 10.3;
+	int a = (int)b;
+只是从那个变量计算出了一个新的类型的值，它并不改变那个变量，无论是值还是类型都不改变。
