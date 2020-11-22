@@ -199,5 +199,10 @@ break VS continue
 
 4.2.2 多重循环
 
+在循环前可以放一个标号来标示循环：
+OUT：
+带标号的break和continue对那个循环起作用
+
+4.2.3 逻辑类型
 
 
