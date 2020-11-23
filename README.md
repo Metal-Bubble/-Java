@@ -205,4 +205,25 @@ OUT：
 
 4.2.3 逻辑类型
 
+关系运算的结果是一个逻辑值，true或false。这个值可以保存在一个对应的逻辑类型变量中，这样的变量类型是boolean
+	boolean flag = true;
+	boolean tooHigh,tooSmall,tooRough;
+	boolean done = false;
+
+逻辑运算
+	逻辑运算是对逻辑量进行的运算，只有逻辑量可以参与运算
+	！ 逻辑非 !a
+	&& 逻辑与 a&&b
+	|| 逻辑或 a||b
+优先级
+!>&&>||
+!done&&(count>MAX)
+
+4.3 循环的例子
+4.3.1 求和
+
+辗转相除法
+	1、如果b等于0，计算结束，a就是最大公约数；
+	2、否则，计算a除以b的余数，让a等于b，而b等于那个余数；
+	3、回到第一步。
 
